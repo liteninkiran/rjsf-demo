@@ -23,7 +23,7 @@ const schema: RJSFSchema = {
     firstName: {
       type: 'string',
       title: 'First name',
-      default: 'Chuck',
+      // default: 'Chuck',
     },
     lastName: {
       type: 'string',
@@ -53,19 +53,16 @@ const schema: RJSFSchema = {
 const uiSchema = {
   firstName: {
     'ui:autofocus': true,
-//    'ui:emptyValue': '',
-    'ui:placeholder':
-      'ui:emptyValue causes this field to always be valid despite being required',
+    'ui:placeholder': 'Enter you first name',
     'ui:autocomplete': 'family-name',
     'ui:enableMarkdownInDescription': true,
-    'ui:description':
-      'Make text **bold** or *italic*. Take a look at other options [here](https://markdown-to-jsx.quantizor.dev/).',
+    'ui:description': 'Make text **bold** or *italic*.',
   },
   lastName: {
     'ui:autocomplete': 'given-name',
+    'ui:placeholder': 'Enter you last name',
     'ui:enableMarkdownInDescription': true,
-    'ui:description':
-      'Make things **bold** or *italic*. Embed snippets of `code`. <small>And this is a small texts.</small> ',
+    'ui:description': 'Make things **bold** or *italic*.',
   },
   age: {
     'ui:widget': 'updown',
@@ -87,9 +84,9 @@ const uiSchema = {
 };
 
 const formData = {
-  lastName: 'Norris',
-  age: 75,
-  bio: 'Roundhouse kicking asses since 1940',
-  password: 'noneed',
-  telephone: '1-800-KICKASS',
+  // lastName: 'Norris',
+  // age: 75,
+  // bio: 'Roundhouse kicking asses since 1940',
+  // password: 'noneed',
+  // telephone: '1-800-KICKASS',
 };
