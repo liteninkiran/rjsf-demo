@@ -8,6 +8,9 @@ const Demo = () => {
       if (error.name === 'pattern') {
         error.message = 'Only digits are allowed';
       }
+      if (error.name === 'minLength') {
+        error.message = 'Minimum length is 5';
+      }
       return error;
     });
   }
@@ -16,6 +19,7 @@ const Demo = () => {
     type: 'object',
     properties: {
       onlyNumbersString: { type: 'string', pattern: '^\\d*$' },
+      otherString: { type: 'string', minLength: 5 },
     },
   };
 
@@ -24,6 +28,8 @@ const Demo = () => {
       schema={schema}
       validator={validator}
       transformErrors={transformErrors}
+      noHtml5Validate={true}
+      liveValidate={true}
     />
   );
 };

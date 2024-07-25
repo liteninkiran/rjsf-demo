@@ -9,6 +9,8 @@ const Demo2 = () => {
       schema={schema}
       uiSchema={uiSchema}
       validator={validator}
+      noHtml5Validate={true}
+      liveValidate={true}
     />
   );
 };
