@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@rjsf/bootstrap-4": "^5.19.3",
     "@rjsf/core": "^5.19.3",
     "@rjsf/utils": "^5.19.3",
     "@rjsf/validator-ajv8": "^5.19.3",
@@ -13,6 +14,7 @@
     "@types/node": "^16.18.104",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
+    "bootstrap": "^4.6.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
