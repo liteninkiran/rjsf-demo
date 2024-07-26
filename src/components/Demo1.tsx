@@ -2,7 +2,7 @@ import Form from '@rjsf/core';
 import { RJSFSchema } from '@rjsf/utils';
 import validator from '@rjsf/validator-ajv8';
 
-const Demo = () => {
+const Demo1 = () => {
   function transformErrors(errors: any, uiSchema: any) {
     return errors.map((error: any) => {
       if (error.name === 'pattern') {
@@ -33,4 +33,4 @@ const Demo = () => {
     />
   );
 };
-export default Demo;
+export default Demo1;
